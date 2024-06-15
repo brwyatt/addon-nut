@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base:7.3.4
+ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base:10.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -7,10 +7,10 @@ FROM ${BUILD_FROM}
 RUN \
     apt-get update \
     && apt-get install -y --no-install-recommends\
-        nut=2.8.0-7 \
-        nut-snmp=2.8.0-7 \
-        nut-xml=2.8.0-7 \
-        usbutils=1:014-1+deb12u1 \
+        nut=2.8.1-3.1ubuntu2 \
+        nut-snmp=2.8.1-3.1ubuntu2 \
+        nut-xml=2.8.1-3.1ubuntu2 \
+        usbutils=1:017-3build1 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
