@@ -1,10 +1,9 @@
 ---
 name: Network UPS Tools
-version: dev
+version: 0.14.0-alpha.1
 slug: nut
 description: Manage battery backup (UPS) devices
-url: https://github.com/hassio-addons/addon-nut
-codenotary: codenotary@frenck.dev
+url: https://github.com/brwyatt/addon-nut
 startup: system
 arch:
   - aarch64
@@ -63,3 +62,4 @@ schema:
   upsmon_deadtime: int?
   i_like_to_be_pwned: bool?
   leave_front_door_open: bool?
+image: ghcr.io/brwyatt/nut/{arch}
